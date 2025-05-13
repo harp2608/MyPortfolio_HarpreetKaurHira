@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Harpreet Kaur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Additional styles for experience page */
+        .experience-timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .experience-timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50px;
+            border-radius: 5px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px 10px 80px;
+            position: relative;
+            background-color: inherit;
+            margin-bottom: 50px;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 38px;
+            background-color: white;
+            border: 5px solid var(--primary-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .timeline-content {
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .timeline-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .company-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .company {
+            font-weight: 600;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+        }
+        
+        .period {
+            color: var(--gray-color);
+            font-weight: 500;
+        }
+        
+        .job-description p {
+            margin-bottom: 20px;
+        }
+        
+        .responsibilities {
+            margin-top: 20px;
+        }
+        
+        .responsibilities h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .responsibilities ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        
+        .responsibilities ul li {
+            margin-bottom: 10px;
+        }
+        
+        .skills-used {
+            margin-top: 20px;
+        }
+        
+        .skills-used h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-badge {
+            background-color: var(--light-color);
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+        }
+        
+        .education-section {
+            background-color: var(--light-color);
+            padding: 80px 0;
+        }
+        
+        .education-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        
+        .education-card:last-child {
+            margin-bottom: 0;
+        }
+        
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .edu-header h3 {
+            color: var(--primary-color);
+            margin-bottom: 0;
+        }
+        
+        .edu-header .period {
+            font-weight: 500;
+        }
+        
+        .institution {
+            font-weight: 600;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .edu-details p {
+            margin-bottom: 15px;
+        }
+        
+        .courses h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .courses ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        
+        .courses ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HK</div>
+            <ul class="nav-links">
+                <li><a href="myportfolio.html">Home</a></li>
+                <li><a href="projectpage.html">Projects</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                <li><a href="myportfolio.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="work-experience">
+            <div class="container">
+                <h2>Professional Experience</h2>
+                
+                <div class="experience-timeline">
+                    <!-- Autodesk Experience -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Design and Make Ambassador</h3>
+                            <div class="company-meta">
+                                <span class="company">Autodesk</span>
+                                <span class="period">2025 - Present</span>
+                            </div>
+                            <div class="job-description">
+                                <p>As a Design and Make Ambassador at Autodesk, I serve as an advocate for cutting-edge design and manufacturing technologies, engaging with industry professionals and peers to promote digital transformation solutions.</p>
+                                
+                                <div class="responsibilities">
+                                    <h4>Key Responsibilities</h4>
+                                    <ul>
+                                        <li>Advocated for Autodesk's design and manufacturing technologies through community engagement and peer education</li>
+                                        <li>Participated in workshops and product demonstrations to showcase innovative solutions</li>
+                                        <li>Stay updated on latest software, tools, and best practices in design and manufacturing</li>
+                                        <li>Collaborated with fellow ambassadors to share insights on innovation and sustainable design solutions</li>
+                                        <li>Provided feedback to product teams based on user experiences and industry needs</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skills-used">
+                                    <h4>Skills & Technologies</h4>
+                                    <div class="skills-list">
+                                        <span class="skill-badge">Autodesk Products</span>
+                                        <span class="skill-badge">Digital Transformation</span>
+                                        <span class="skill-badge">Community Engagement</span>
+                                        <span class="skill-badge">Technical Presentations</span>
+                                        <span class="skill-badge">Product Advocacy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Aenergi Experience -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>AI and Data Analysis Intern</h3>
+                            <div class="company-meta">
+                                <span class="company">Aenergi (Remote | Germany)</span>
+                                <span class="period">Jan 2025 - April 2025</span>
+                            </div>
+                            <div class="job-description">
+                                <p>Working remotely with a German-based company to develop AI-driven data analysis solutions for engineering applications, focusing on digital twin systems and process optimization.</p>
+                                
+                                <div class="responsibilities">
+                                    <h4>Key Responsibilities</h4>
+                                    <ul>
+                                        <li>Successfully implemented Modbus-based communication with KACO inverters, enabling real-time data collection.</li>
+                                        <li>Developed systems to poll and decode critical energy metrics (voltage, current, power output).</li>
+                                        <li>Created comprehensive documentation that reduced onboarding time for future team members.</li>
+                                        <li>Conduct competitive market research to inform business development strategies</li>
+                                        <li>Apply Lean Six Sigma principles to improve process efficiency</li>
+                                        <li>Built testing and validation tools that improved overall team efficiency.</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skills-used">
+                                    <h4>Skills & Technologies</h4>
+                                    <div class="skills-list">
+                                        <span class="skill-badge">Artificial Intelligence</span>
+                                        <span class="skill-badge">Data Analysis</span>
+                                        <span class="skill-badge">ETL Pipelines</span>
+                                        <span class="skill-badge">Digital Twins</span>
+                                        <span class="skill-badge">Microsoft Teams</span>
+                                        <span class="skill-badge">Notion</span>
+                                        <span class="skill-badge">Lean Six Sigma</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modern Insecticides Experience -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Senior Data Analyst</h3>
+                            <div class="company-meta">
+                                <span class="company">Modern Insecticides Ltd., India</span>
+                                <span class="period">Jan 2020 - Jan 2021</span>
+                            </div>
+                            <div class="job-description">
+                                <p>Led data analysis initiatives to optimize business operations and inform strategic decision-making. Developed and maintained SQL-based data pipelines for efficient reporting and insights generation.</p>
+                                
+                                <div class="responsibilities">
+                                    <h4>Key Responsibilities</h4>
+                                    <ul>
+                                        <li>Developed SQL-based data pipelines to streamline data reporting processes</li>
+                                        <li>Designed and maintained SQL pipelines, improving data integrity, and reducing reporting errors by 25%. </li>
+                                        <li>Conducted ROI analysis using advanced data visualization techniques</li>
+                                        <li>Presented actionable insights to senior leadership, influencing decisions that led to a 15% increase in operational efficiency. </li>
+                                        <li>Aligned cross-functional team operations with strategic business goals</li>
+                                        <li>Provided actionable insights to senior management to improve decision-making</li>
+                                        <li>Optimized data collection and analysis methodologies to enhance accuracy</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skills-used">
+                                    <h4>Skills & Technologies</h4>
+                                    <div class="skills-list">
+                                        <span class="skill-badge">SQL</span>
+                                        <span class="skill-badge">Data Visualization</span>
+                                        <span class="skill-badge">Business Intelligence</span>
+                                        <span class="skill-badge">ROI Analysis</span>
+                                        <span class="skill-badge">Strategic Planning</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- AK Clinics Experience -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Customer Insights Analyst</h3>
+                            <div class="company-meta">
+                                <span class="company">AK Clinics, India</span>
+                                <span class="period">Jan 2018 - Jan 2020</span>
+                            </div>
+                            <div class="job-description">
+                                <p>Utilized data-driven approaches to enhance customer experience and engagement strategies. Developed reporting tools to provide actionable insights for leadership decision-making.</p>
+                                
+                                <div class="responsibilities">
+                                    <h4>Key Responsibilities</h4>
+                                    <ul>
+                                        <li>Leveraged data analysis to enhance customer engagement strategies, increasing client retention by 25%</li>
+                                        <li>Developed and implemented reporting tools for actionable insights</li>
+                                        <li>Leveraged data analysis to enhance customer engagement strategies, leading to a 25% increase in client retention and repeat business.</li>
+                                        <li>Analyzed customer feedback trends to identify improvement opportunities</li>
+                                        <li>Optimized resolution processes to improve client satisfaction</li>
+                                        <li>Collaborated with cross-functional teams to implement customer-centric initiatives</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skills-used">
+                                    <h4>Skills & Technologies</h4>
+                                    <div class="skills-list">
+                                        <span class="skill-badge">Customer Analytics</span>
+                                        <span class="skill-badge">Data Visualization</span>
+                                        <span class="skill-badge">Reporting Tools</span>
+                                        <span class="skill-badge">Trend Analysis</span>
+                                        <span class="skill-badge">Process Optimization</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Digitrans Experience -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Data-Driven Operations Engineer</h3>
+                            <div class="company-meta">
+                                <span class="company">Digitrans (Bamko INC USA), India</span>
+                                <span class="period">2008 - 2014</span>
+                            </div>
+                            <div class="job-description">
+                                <p>Optimized operational processes through quantitative analysis and workflow automation. Designed and implemented Power BI dashboards for real-time monitoring and performance tracking.</p>
+                                
+                                <div class="responsibilities">
+                                    <h4>Key Responsibilities</h4>
+                                    <ul>
+                                       
+                                        <li>Developed real-time Power BI dashboards, enhancing decision-making speed by 40%. </li>
+                                        <li>Automated workflows using JavaScript, reducing manual efforts by 40%</li>
+                                        <li>Worked in an Agile environment to continuously improve operational monitoring</li>
+                                        <li>Collaborated with technical teams to implement efficiency-enhancing solutions</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skills-used">
+                                    <h4>Skills & Technologies</h4>
+                                    <div class="skills-list">
+                                        <span class="skill-badge">Power BI</span>
+                                        <span class="skill-badge">JavaScript</span>
+                                        <span class="skill-badge">Workflow Automation</span>
+                                        <span class="skill-badge">Quantitative Analysis</span>
+                                        <span class="skill-badge">Agile Methodology</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="education-section">
+            <div class="container">
+                <h2>Education</h2>
+        
+                <div class="education-card">
+                    <div class="edu-header">
+                        <h3>Master of Science in Computer Science</h3>
+                        <span class="period">2024 - 2025</span>
+                    </div>
+                    <div class="institution">San Francisco Bay University, United States</div>
+                    <div class="edu-details">
+                        <p>GPA: 3.5</p>
+                        <div class="courses">
+                            <h4>Relevant Coursework</h4>
+                            <ul>
+                                <li>Data Structures and Algorithms</li>
+                                <li>Machine Learning and Business Intelligence</li>
+                                <li>Advanced Database Management Systems</li>
+                                <li>Object Oriented Programming in Python</li>
+                                <li>Mathematics & Statistics for Data Science</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="education-card">
+                    <div class="edu-header">
+                        <h3>Bachelor of Computer Applications</h3>
+                        <span class="period">2005 - 2008</span>
+                    </div>
+                    <div class="institution">Makhanlal Chaturvedi National University, India</div>
+                    <div class="edu-details">
+                        <p>GPA: 3.76</p>
+                        <div class="courses">
+                            <h4>Relevant Coursework</h4>
+                            <ul>
+                                <li>C++</li>
+                                <li>JavaScript</li>
+                                <li>Oracle</li>
+                                <li>Linux</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
